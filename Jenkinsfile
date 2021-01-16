@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    enviroment{
+        PATH= "/usr/share/maven/bin:$PATH"
+    }
     tools{
         maven "3.6.3"
     }
